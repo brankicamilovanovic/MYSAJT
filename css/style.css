@@ -1,0 +1,396 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {  font-family: 'entypo', sans-serif;}
+
+* { margin:0; padding:0;}
+body { 
+  background: url('https://i.imgur.com/uNSAd3p.png');
+  font-family: 'Roboto Slab', serif;     
+  font-weight:300;
+  color:#333;
+}
+a { text-decoration:none; color:#F4f4f4;}
+a:hover, a:active { color:#FFF;}
+ul, li { list-style:none; }
+.hide { display:none;}
+
+.navbar .centerHolder {
+  width:768px;
+  position:relative;
+  left:50%;
+  margin-left:-384px;
+}
+@media all and (min-width: 0) and (max-width: 639px) {
+  .navbar {
+    position:fixed;
+    height:auto;
+    width:640px;
+    min-width:320px;
+  }
+  .navbar li.logo a {
+    padding-left:50px;
+  } 
+  .navbar li, .navbar li a, .navbar li.blog a, .navbar li.design a, .navbar li.illustration a, .navbar li.hireme a {
+    display:none;
+  }
+  .navbar a .dropdown.entypo-plus-circled { 
+    left:275px;
+    display:block;
+    
+    -webkit-transition: all 0.15s ease-in-out;
+       -moz-transition: all 0.15s ease-in-out;
+        -ms-transition: all 0.15s ease-in-out;
+         -o-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+  }
+  .navbar a .dropdown.entypo-plus-circled.active {
+    transform:rotate(45deg);
+    -webkit-transform:rotate(-45deg);
+  }
+  .dropdown.menu {
+    position:fixed;
+    width:100%;
+  }
+  .dropdown.menu li {
+    display:block;
+    text-align:center;
+    background-color:#C71F3C;
+    border-bottom:1px solid #e34;
+    height:30px;
+  }
+  .dropdown.menu li a{
+    line-height:30px;
+  }
+  .dropdown.menu li.active {
+    background-color:#f4f4f4;
+  }
+  .dropdown.menu li.active a {
+    color:#C71F3C;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 1023px) {
+  .navbar {
+    position:fixed;
+    height:auto;
+    width:1024px;
+    min-width:640px;
+  }
+  .navbar li, .navbar li a, .navbar li.blog a, .navbar li.design a, .navbar li.illustration a {
+    display:none;
+  }
+  .navbar a .dropdown.entypo-plus-circled { 
+    left:425px;
+    display:block;
+  }
+   .dropdown.menu {
+    position:fixed;
+    width:100%;
+  }
+  .dropdown.menu li {
+    display:block;
+    text-align:center;
+    background-color:#C71F3C;
+    border-bottom:1px solid #e34;
+    height:30px;
+  }
+  .dropdown.menu li a{
+    line-height:30px;
+  }
+  .dropdown.menu li.active {
+    background-color:#f4f4f4;
+  }
+  .dropdown.menu li.active a {
+    color:#C71F3C;
+  }
+  .dropdown.menu .hireme {
+    display:none;
+  }
+}
+@media all and (min-width: 1024px) { 
+  .navbar {
+    position:fixed;
+    height:auto;
+    width:100%;
+    min-width:768px;
+  }
+  .navbar a .dropdown.entypo-plus-circled { 
+    display:none;
+  }
+}
+.navbar {
+  background-color:#e34;
+  color:#f4f4f4;
+  box-shadow:0px 25px 50px #f4f4f4, inset 0px -3px 0px #c71f3c;
+  padding:20px;
+  overflow:hidden;
+  z-index:1;
+}
+.navbar li, .navbar li a { display:inline;}
+.navbar li { padding:20px 0; margin:0 }
+.navbar li a { padding:20px 30px; font-weight:400;}
+.navbar li a:hover { 
+  position:relative; 
+  top:-1px; 
+  color:#e34; 
+  background-color:#f4f4f4;
+  box-shadow: 0px 2px 0px #b1b1b1, inset 0px -1px 0px #b1b1b1;
+  transition:0.2s;
+}
+.navbar .logo {
+  font-family:'Lily Script One', cursive;
+  font-size:60px;
+  line-height:0px;
+  position:relative;
+  top:14px;
+}
+.navbar li.logo a:hover {  text-shadow: 0px 3px 0px #c71f3c;}
+.navbar li.hireme a{
+  position:relative; 
+  top:-1px; 
+  color:#e34; 
+  background-color:#f4f4f4;
+  box-shadow: 0px 2px 0px #b1b1b1;
+  font-weight:700;
+  font-size:18px;
+  text-transform:uppercase;
+  text-decoration:underline;
+}
+.navbar li.hireme a:hover {
+  background-color:#f65353;
+  color:#f4f4f4;
+  text-shadow:0px 1px 0px #c71f3c;
+  box-shadow:0px 0px 0px transparent, inset 0px -1px 0px #c71f3c;
+}
+.navbar li.blog a:active, .navbar li.design a:active, .navbar li.illustration a:active, .navbar li.hireme a:active {
+  top:-1px;
+  border-top:4px solid #333;
+  border-bottom:1px solid #999;
+
+  -webkit-transition:none;
+     -moz-transition:none;
+      -ms-transition:none;
+       -o-transition:none;
+          transition:none;
+}
+.navbar li a.active, .navbar li.hireme a.active {
+  background-color:#f4f4f4;
+  color:#e34;
+  text-shadow:0px 1px 0px #c71f3c;
+  top:-1px;
+  border-top:4px solid #333;
+
+  -webkit-transition:none;
+     -moz-transition:none;
+      -ms-transition:none;
+       -o-transition:none;
+          transition:none;
+}
+.navbar li a.active:hover {
+  top:0px;
+  color:#c71f3c;
+}
+.navbar li a.active:active {
+  top:1px;
+  color:#c71f3c;
+  border-top:5px solid #333;
+}
+.navbar li.hireme a.active { border-bottom:none; box-shadow:none; top:2px;}
+.navbar li.hireme a:active { border-bottom: 1px solid #c71f3c; }
+.navbar a .dropdown.entypo-plus-circled { 
+  color:#f8adb4;
+  font-size:24px;
+  line-height:0;
+  position:absolute;
+  padding:24px 14px;
+  top:-12px;
+
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+       -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+.navbar a .dropdown.entypo-plus-circled.active {
+    -webkit-transform:rotate(-405deg);
+      -moz- transform:rotate(-405deg);
+       -ms- transform:rotate(-405deg);
+        -o- transform:rotate(-405deg);
+            transform:rotate(-405deg);
+ }
+.navbar a .dropdown.entypo-plus-circled:hover, .navbar a .dropdown.entypo-plus-circled:active { 
+  color:#fff;
+}
+.dropdown.menu li.active {
+  background-color:#f4f4f4;
+  color:#C71F3C;
+}
+
+section {
+  height:100%;
+  width:100%;
+  text-align:center;
+}
+section a {  color:#e34; border-bottom:1px dashed; }
+section a:hover, section a:active { color:#be2836; }
+section.intro, section.design, section.illustration, section.about {
+  position:relative;
+  top:60px;
+  height:90%;
+}
+.intro .contentArea, .about .contentArea {
+  width:550px;
+  margin-left:-225px;
+  margin-top:200px;
+  position:absolute;;
+  left:50%;
+  height:auto;
+}
+.about .contentArea {
+  margin-top:60px;
+}
+.intro h1, .design h1, .illustration h1, .about h1 { 
+  font-size:48px;
+  margin-bottom:12px; 
+  text-shadow: 2px 2px 0px #f4f4f4, 4px 4px 0px rgba(30, 30, 30, 0.2);}
+.intro .social { margin: 12px 0; }
+.intro .social li {  
+  display:inline; 
+  font-size:24px;
+  margin:2px 8px;
+  border-radius:8px;
+  padding:0 8px;
+}
+.intro .social a {   border-bottom:none;}
+.intro .social a .entypo-twitter {  color:#00ACEE;}
+.intro .social a .entypo-twitter:hover {  color:#FFF; background-color:#00ACEE;}
+.intro .social a .entypo-tumblr {  color:#2C4762;}
+.intro .social a .entypo-tumblr:hover {  color:#FFF; background-color:#2C4762;}
+.intro .social a .entypo-code {  color:#333;}
+.intro .social a .entypo-code:hover {  color:#FFF; background-color:#333;}
+.intro .social a .entypo-dribbble {  color:#E54785;}
+.intro .social a .entypo-dribbble:hover {  color:#FFF; background-color:#E54785;}
+.intro .social a .entypo-linkedin {  color:#0177B5;}
+.intro .social a .entypo-linkedin:hover {  color:#FFF; background-color:#0177B5;}
+
+section.design, section.illustration, section.about {
+  position:absolute;
+  top:-4000px;
+}
+.about .contentArea p {
+  margin:24px 0;
+}
+@media all and (min-width: 320px) and (max-width: 639px) {
+  .design h1, .illustration h1 {
+    font-size:36px;
+  }
+  .design .contentArea, .illustration .contentArea {
+    width:245px;
+    margin-left:-122px;
+    position:absolute;
+    left:50%;
+  }  
+}
+@media all and (min-width: 640px) and (max-width: 1023px) {
+  .design .contentArea, .illustration .contentArea {
+    width:510px;
+    margin-left:-260px;
+    position:absolute;
+    left:50%;
+  }  
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .design .contentArea, .illustration .contentArea {
+    width:1024px;
+    margin-left:-512px;
+    position:absolute;
+    left:50%;
+  }  
+}
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .design .contentArea, .illustration .contentArea {
+    width:1260px;
+    margin-left:-630px;
+    position:absolute;
+    left:50%;
+  }  
+}
+@media all and (min-width: 1920px)and (max-width: 2560px) {
+  .design .contentArea, .illustration .contentArea {
+    width:1760px;
+    margin-left:-880px;
+    position:absolute;
+    left:50%;
+  }  
+}
+.thumbs li {
+  background-color:#e34;
+  height:200px;
+  width:225px;
+  display:inline-block;
+  float:left;
+  position:relative;
+  margin:12px;
+  border:1px solid #F4F4F4;
+  box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.5);
+  overflow:hidden;
+  
+  -webkit-transition: all 0.15s ease-in-out;
+     -moz-transition: all 0.15s ease-in-out;
+      -ms-transition: all 0.15s ease-in-out;
+       -o-transition: all 0.15s ease-in-out;
+          transition: all 0.15s ease-in-out;
+}
+.thumbs li:hover { 
+  top:-12px; 
+  box-shadow: 0px 22px 35px rgba(30, 30, 30, 0.35);
+}
+.thumbs a { border-bottom:none; }
+.thumbs a > li:before  {
+  background-color:#c71f3c; 
+  color:#FFF;
+  opacity:0.8; 
+  position:absolute;
+  left:0;
+  height:200px;
+  width:225px;
+  content:'';
+  top:-200px;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.thumbs li > img {
+  width:100%;
+  height:auto;
+}
+.thumbs a:hover > li:before {  top:0;}
+
+/* Design Thumbs desc */
+.thumbs a > li.stickMaker:before { content:'  '; }
+.thumbs a > li.metaphor:before { content:' NALEPNICE ZA ZIDOVE'; }
+.thumbs a > li.keith:before { content:' my web site'; }
+.thumbs a > li.jessi:before { content:'   '; }
+.thumbs a > li.crowdPunch:before { content:' portfolio '; }
+.thumbs a > li.nanoISS:before { content:' cv resume '; }
+.thumbs a > li.nanoShuttle:before { content:'drawing art '; }
+.thumbs a > li.sandzini2:before { content:'  '; }
+.thumbs a > li.sandzini:before { content:' '; }
+
+
+/* Illustration Thumbs desc */
+.thumbs li.mmBosses > img,  .thumbs li.kingz > img, .thumbs li.crowdPunch > img { width:auto; height: 100%; }
+.thumbs a > li.mmBosses:before { content:'Fun illustration of Capcom\'s Megaman characters. Drawn in a Moleskine sketchbook with Micron pens. 2013'; }
+.thumbs a > li.redCyclone:before { content:'Sketchbook page of Zangief from the Street Fighter series. Drawn with Micron pens. 2013'; }
+.thumbs a > li.gief:before { content:'An illustration of Zangief from the Street Fighter series. Drawn in Photoshop. 2012'; }
+.thumbs a > li.monarch:before { content:'An illustration done as part of a group theme at drawedgoods.com - our favorite uniforms. Drawn in Photoshop. 2012'; }
+.thumbs a > li.gaga:before { content:'My take on a fun outfit Lady Gaga might wear. Based on the Pokémon series\'s Starmie. Drawn in Photoshop. 2012'; }
+.thumbs a > li.dudley:before { content:'Vector drawing of Dudley from the Street Fighter series. Drawn entirely in Illustrator. 2012'; }
+.thumbs a > li.kingz:before { content:'Spot Illustration done for the Super Kingz comic, Issue #1 by Scott McMahon. Drawn in Photoshop. 2012. The Super Kingz are © Scott McMahon and Corey Barba'; }
+.thumbs a > li.selfPortrait:before { content:'Self Portrait. Drawn in Photoshop. 2012'; }
+.thumbs a > li.sweetPotato:before { content:'Short comic about my love for sweet potatoes. Drawn in pencil. 2012'; }
+.thumbs a > li.cut:before { content:'A short animated .gif depicting Cutman from the Megaman series doing what he does best. Animated in Photoshop. 2012'; }
+.thumbs a > li.ice:before { content:'Iceman from the Megaman series enjoying an Otterpop. Animated in Photoshop. 2012'; }
+.thumbs a > li.spiderman:before { content:'My take on Reed Black\'s Hipster Spiderman drawings. Drawn in Photoshop. 2012'; }
+.thumbs a > li.cornerGrill:before { content:'A Digital Painting from my BFA thesis series. Drawn in Photoshop. 2010'; }
